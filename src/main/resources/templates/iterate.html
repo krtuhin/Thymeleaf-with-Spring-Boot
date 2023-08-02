@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Example - Loop</title>
+</head>
+
+<body>
+
+	<h1>Going to traverse in loop...!</h1>
+
+	<!--return the whole list-->
+	<h2 th:text="${list}"></h2>
+
+	<ul>
+		<!--take a variable n to store single item of list-->
+		<!--status variable preprovided used to get count, index, size, even/odd, first, last-->
+		<li th:each="n, status : ${list}">
+
+			<!--print the value of variable-->
+			<!--condition based on status value-->
+			<span th:style="${status.odd} ? 'font-weight: bold' : 'color:red'"
+				th:text="${status.index+1}+' '+${n}"></span>
+		</li>
+	</ul>
+</body>
+
+</html>
