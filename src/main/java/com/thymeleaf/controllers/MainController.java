@@ -53,6 +53,8 @@ public class MainController {
 	@GetMapping("/fragment")
 	public String fragmentHandler(Model m) {
 
+		m.addAttribute("name", "Tuhin Kumar");
+
 		return "fragment";
 	}
 }

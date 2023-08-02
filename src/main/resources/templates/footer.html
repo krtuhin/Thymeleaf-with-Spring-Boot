@@ -9,11 +9,15 @@
 <body>
 
 	<!--fragment tag-->
-	<footer id="fragmentTag" th:fragment="footer1">
+	<footer id="fragmentTag" th:fragment="footer1(name, subtitle)">
 
 		<div class="container">
 			<h1>This is Footer..!</h1>
-			<h2>Created by Tuhin Kumar</h2>
+
+			<!--dynamic value-->
+			<h2>Created by <span th:text="${name}"></span></h2>
+			<h3 th:text="${subtitle}"></h3>
+
 		</div>
 
 	</footer>

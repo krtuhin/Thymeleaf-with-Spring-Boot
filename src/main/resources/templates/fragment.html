@@ -12,8 +12,8 @@
 
 	<!--include footer here-->
 
-	<!--host tag-->
-	<footer id="hostTag" th:replace="footer::footer1">
+	<!--host tag, sending dynamic value-->
+	<footer id="hostTag" th:replace="footer::footer1(${name},'This is for practice..')">
 
 	</footer>
 
