@@ -48,4 +48,11 @@ public class MainController {
 
 		return "condition";
 	}
+
+	// handler for including Fragments
+	@GetMapping("/fragment")
+	public String fragmentHandler(Model m) {
+
+		return "fragment";
+	}
 }
