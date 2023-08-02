@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Condition - Page</title>
+</head>
+
+<body>
+
+	<h1>This page for check conditional operator..!</h1>
+
+	<!--Elvis operator - like ternary operator-->
+	<h2>User is <span th:style="${isActive} ? 'color: aqua;':'color: red;'"
+			th:text="${isActive} ? 'Logged In' : 'Logged Out'"></span></h2>
+
+	<!--if-unless operator - like if-else operator-->
+	<h3 th:if="${gender}=='m'">Male</h3>
+
+	<h3 th:unless="${gender}=='m'">Female</h3>
+
+	<!--switch-case operator-->
+	<div th:switch="${#lists.size(myList)}">
+
+		<h1 th:case="'0'">List is empty..!</h1>
+		<h1 th:case="'1'">List containing one element..!</h1>
+
+		<!--default case-->
+		<h1 th:case="*">List containing more than one element..!</h1>
+
+	</div>
+
+
+</body>
+
+</html>
