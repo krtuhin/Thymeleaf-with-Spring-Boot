@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>About Page</title>
+</head>
+<body>
+	
+	<h1>About my page...!!</h1>
+	
+	<!--get dynamic data from controller using thymeleaf-->
+	<h2>My name is : <span th:text="${name}"></span></h2>
+	
+	<!--dynamic value in upperCase-->
+	<h3 th:text="${ #strings.toUpperCase(name) }" ></h3>
+	
+	<h3 th:text="'Length of the name is: '+${ #strings.length(name) }"></h3>
+	
+	<!--loacl variable, it will work within the div only-->
+	<div th:with="a = 10, b= 5, n = ${name}">
+		
+		<h3>value of a = <span th:text="${a}"></span></h3>
+		
+		<h3 th:text="'Sum of  ${a}  and ${b}  is  ${a+b}'"></h3>
+	</div>
+	
+</body>
+</html>
