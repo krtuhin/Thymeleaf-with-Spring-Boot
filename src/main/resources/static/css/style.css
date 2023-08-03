@@ -1,0 +1,17 @@
+body {
+	background-color: #e2e2e2;
+}
+
+.container {
+	text-align: center;
+	background-color: white;
+	padding: 30px;
+	border-radius: 30px;
+	font-family: 'Roboto';
+}
+
+.photo {
+	padding: 30px;
+	border-radius: 60px;
+	width: 400px;
+}
