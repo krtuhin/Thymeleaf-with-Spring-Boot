@@ -1,0 +1,10 @@
+body {
+	background-color: aqua;
+}
+
+div {
+	color: blue;
+	padding: 15px;
+	background-color: #e2e2e2;
+	border-radius: 10px;
+}

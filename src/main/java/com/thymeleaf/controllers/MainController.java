@@ -57,4 +57,19 @@ public class MainController {
 
 		return "fragment";
 	}
+
+	// handler for contact page
+	@GetMapping("/contact")
+	public String contact(Model m) {
+
+		System.out.println("This is contact handler...!");
+
+		return "contact";
+	}
+
+	// method for service page
+	@GetMapping("/service")
+	public String service(Model m) {
+		return "service";
+	}
 }
