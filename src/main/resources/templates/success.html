@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Success Page</title>
+</head>
+
+<body>
+
+	<h1>Welcome to Success Page...!</h1>
+
+	<h2 th:text="'Your email is : ' + ${data.email}"></h2>
+	<h2 th:text="'Your password is : ' + ${data.password}"></h2>
+
+</body>
+
+</html>
